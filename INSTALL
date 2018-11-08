@@ -1,0 +1,9 @@
+Building Sakhi
+
+See doc/readme-qt.rst for instructions on building Sakhi QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Sakhi.
+
+See doc/build-*.txt for instructions on building sakhid,
+the intended-for-services, no-graphical-interface, reference
+implementation of Sakhi.
