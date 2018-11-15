@@ -43,7 +43,7 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 4);
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfStakeLimitV2(~uint256(0) >> 30);
 
-int nStakeMinConfirmations = 40;
+int nStakeMinConfirmations = 1920;
 unsigned int nStakeMinAge = 60 * 60 * 24; // 3 hour
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
 
@@ -1018,7 +1018,7 @@ int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, i
 {
     int64_t nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
     if(pindexBest->nMoneySupply <= 10000000000000000000) {
-    nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8) * 2;
+    nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8) * 8;
 	} else { 
 	nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8) * 0;
 	}
