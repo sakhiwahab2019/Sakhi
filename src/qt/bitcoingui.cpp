@@ -191,6 +191,11 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
         }
     }
 
+	QFile File(":/css/css");
+    File.open(QFile::ReadOnly);
+    QString StyleSheet = QLatin1String(File.readAll());
+
+    qApp->setStyleSheet(StyleSheet);
     statusBar()->addWidget(progressBarLabel);
     statusBar()->addWidget(progressBar);
 
@@ -352,7 +357,7 @@ static QWidget* makeToolBarSpacer()
 {
     QWidget* spacer = new QWidget();
     spacer->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
-    spacer->setStyleSheet(fUseBlackTheme ? "QWidget { background: rgb(30,32,36); }" : "QWidget { background: none; }");
+    spacer->setStyleSheet(fUseBlackTheme ? "QWidget { background: transparent; }" : "QWidget { background: none; }");
     return spacer;
 }
 
@@ -367,7 +372,7 @@ void BitcoinGUI::createToolBars()
         QWidget* header = new QWidget();
         header->setMinimumSize(160, 116);
         header->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        header->setStyleSheet("QWidget { background-color: rgb(24,26,30); background-repeat: no-repeat; background-image: url(:/images/header); background-position: center center; }");
+        header->setStyleSheet("QWidget { background-color: transparent; background-repeat: no-repeat; background-image: url(:/images/header); background-position: center center; }");
         toolbar->addWidget(header);
         toolbar->addWidget(makeToolBarSpacer());
     }

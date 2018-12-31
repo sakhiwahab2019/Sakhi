@@ -65,6 +65,10 @@
         <file alias="splash">res/images/splash3.png</file>
         <file alias="header">res/images/header.png</file>
 		<file alias="bigheader">res/images/bigheader.png</file>
+		<file alias="bkg">res/images/walletFrame_bg.png</file>
+    </qresource>
+	<qresource prefix="/css">
+        <file alias="css">res/css/css.css</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.mng</file>

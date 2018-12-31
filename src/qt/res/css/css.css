@@ -1,0 +1,292 @@
+QMainWindow {
+border-image: url(:/images/bkg);
+color: #EED484;
+min-height:520px;
+min-width:900px;
+}
+
+QToolTip{
+color: #EED484;
+border: 1px solid white;
+background-color: black;
+}
+
+QDialog {
+	color: #EED484;
+background-color: #111111;
+}
+
+QMessageBox {
+	
+	border-image: url(:/images/bkg);
+	color: #EED484;
+}
+
+QMessageBox > QString {
+	color: #EED484;
+}
+
+QMessageBox > QLabel {
+	color: #EED484;
+}
+
+QDialog#AskPassphraseDialog {
+color: #EED484;
+border-image: url(:/images/bkg);
+}
+
+QDialog#OptionsDialog {
+border-image: url(:/images/bkg);
+}
+
+QDialog#RPCConsole {
+border-image: url(:/images/bkg);
+}
+QMenuBar {
+	background-color: transparent;
+	color: #EED484;
+}
+QMenuBar::item {
+	background-color: #151515;
+	color: #EED484;
+}
+QMenuBar::item:selected {
+	background-color: #222;
+	color: #EED484;
+}
+QMenu {
+	background-color: #111;
+	color: #EED484;
+}
+QMenu::item {
+	color: #EED484
+}
+QMenu::item:selected {
+	background-color: #242424;
+	color: #EED484
+}
+QDialog#SignVerifyMessageDialog {
+border-image: url(:/images/bkg);
+}
+
+QDialog#AboutDialog {
+border-image: url(:/images/bkg);
+}
+
+QDialog#AboutQtDialog {
+border-image: url(:/images/bkg);
+}
+
+QDialog#AboutDialog .QLabel{
+color: white;
+}
+QDialog#OptionsDialog .QLabel{
+color: black;
+}
+QDialog#RPCConsole .QLabel{
+color: black;
+}
+QDialog#CoinControlDialog .QLabel .QRadioButton {
+	color: #EED484;
+}
+QDialog#AskPassphraseDialog .QLabel{
+	color: #EED484;
+}
+QDialog#EditAddressDialog .QLabel {
+	color: #EED484;
+}
+QDialog#CoinControlDialog {
+	border-image: url(:/images/bkg);
+}
+QDialog#CoinControlDialog .QLabel {
+	color: #EED484;
+}
+QDialog#CoinControlDialog .QFrame#frame .QRadioButton#radioTreeMode { /* Coin Control Tree Mode Selector */
+color: black;
+}
+
+QDialog#CoinControlDialog .QFrame#frame .QRadioButton#radioListMode { /* Coin Control List Mode Selector */
+color: black;
+}
+QDialog#SignVerifyMessageDialog QWidget#tabWidget QLabel#infoLabel_SM {
+	color: black;
+}
+QDialog#SignVerifyMessageDialog QWidget#tabVerifyMessage QLabel#infoLabel_VM{
+	color: black;
+}
+QDialog#SignVerifyMessageDialog QWidget#tabWidget{
+	background: transparent;
+}
+QDialog#AskPassphraseDialog QLabel#passLabel1, QDialog#AskPassphraseDialog QLabel#passLabel2, QDialog#AskPassphraseDialog QLabel#passLabel3 {
+color: white;
+}
+QDialog#AskPassphraseDialog QCheckBox {
+	color: white;
+}
+QDialog#EditAddressDialog {
+	
+}
+QDialog#SendCoinsDialog {
+	background:transparent;
+	color: #EED484;
+}
+
+QWidget#AddressBookPage {
+	background:transparent;
+}
+
+QWidget#AddressBookPage QLabel{
+	color: #EED484;
+}
+
+QWidget#OverviewPage {
+	color: #EED484;
+}
+
+QDialog#SendCoinsDialog .QFrame#frameCoinControl{
+background:transparent;
+}
+QDialog#MasternodeManager .QTabWidget#tabWidget .QWidget#tab {
+background-color:transparent;
+}
+QDialog#SendCoinsDialog .QFrame#frameCoinControl .QLabel#labelCoinControlFeatures { /* Coin Control Header */
+color:#EED484;
+font-weight:bold;
+font-size:14px;
+}
+QDialog#SendCoinsDialog .QScrollArea#scrollArea { /* Send To Widget */
+background:transparent;
+}
+QDialog#SendCoinsDialog .QScrollArea#scrollArea .QWidget#scrollAreaWidgetContents { /* Send To Widget */
+background:transparent;
+}
+QLabel { /* Base Text Size & Color */
+font-size:12px;
+color:#ffffff;
+}
+QWidget .QFrame#frame_2 .QListView#listTransactions { /* Transaction List */
+/*color:#ffffff; /*5bd75a;*/
+font-weight:bold;
+font-size:14px;
+color:#EED484;
+}
+
+/* Not used yet but custom properties can be used to simulate
+   QT Roles for color listview items. Using delegates curently. */
+QWidget .QFrame#frame_2 .QListView::item#listTransactions {
+color:#EED484;
+background-color:transparent;
+}
+QHeaderView { /* Table Header */
+background-color:#fff;
+outline:0;
+color: black;
+}
+QHeaderView::section { /* Table Header Sections */
+qproperty-alignment:center;
+background-color: white;
+color:black;
+min-height:25px;
+font-weight:bold;
+font-size:11px;
+border:0;
+border-right:1px solid #000;
+padding-left:5px;
+padding-right:5px;
+padding-top:2px;
+padding-bottom:2px;
+}
+.QScrollArea {
+background:transparent;
+border:0;
+}
+
+.QTableView { /* Table - has to be selected as a class otherwise it throws off QCalendarWidget */
+background:rgba(0,25,0,0);
+alternate-background-color:rgba(15,45,15,40);
+alternate-color:#EED484;
+border:1px solid #747f8d;
+color:#EED484;
+}
+
+QWidget#SendCoinsEntry QLabel{
+	color: #EED484;
+}
+
+QWidget#OverviewPage .QLabel#label_5{ /* Wallet Label */
+color: #EED484;
+font-size: 18px;
+}
+
+QWidget#OverviewPage .QLabel#label{ /* Wallet Label */
+color: #EED484;
+}
+
+QWidget#OverviewPage QLabel {
+	color: #EED484;
+}
+
+QWidget#OverviewPage .QLabel#label_4 { /* Recent Transactions Label */
+color: #EED484;
+font-size:18px;
+}
+
+QToolBar {
+background-color:transparent;
+color: #EED484;
+border:0px solid #000;
+padding:0;
+margin:0;
+
+}
+
+QToolBar > QToolButton {
+background-color:transparent;
+border-style:solid;
+border-color:rgba(255, 159, 20, 255);
+border-bottom: 2px solid #333333;
+border-left:0px;
+border-top:0px;
+border-right:0px;
+color:#666666;
+padding:5px;
+
+font-size: 14px;
+font-family: Georgia,Times,Times New Roman,serif;
+font-weight: 400;
+font-variant: small-caps;
+
+}
+
+QToolBar > QToolButton:checked {
+	color: #EED484;
+border-bottom: 2px solid #EED484;
+}
+
+QToolBar > QToolButton:hover {
+	color: #EED484;
+border-bottom: 2px solid #EED484;
+}
+QPushButton {
+background-color: #1a1a1a;
+border: 2px solid #131313;
+color: #EED484;
+padding:5px;
+font-weight:bold;
+}
+
+QDialog#SendCoinsDialog .QFrame#frameCoinControl .QCheckBox#checkBoxCoinControlChange { /* Custom Change Label */
+color: #EED484;
+}
+
+QDialog#SendCoinsDialog .QFrame#frameCoinControl QLabel { /* Custom Change Label */
+color: #EED484;
+}
+
+QDialog#CoinControlDialog .QFrame#frame .QRadioButton#radioTreeMode { /* Coin Control Tree Mode Selector */
+color: #EED484;
+}
+
+QDialog#CoinControlDialog .QFrame#frame .QRadioButton#radioListMode { /* Coin Control List Mode Selector */
+color: #EED484;
+}
